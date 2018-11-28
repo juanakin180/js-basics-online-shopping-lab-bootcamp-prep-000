@@ -9,8 +9,14 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+var newCart = new Object({});
+
+function addToCart(item, object, value ) {
+  
+
+return Object.assign({}, object, { [item]: value });
+
+  
 }
 
 function viewCart() {
