@@ -9,8 +9,14 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(object, item) {
+  
+   item = new Object({ Apples: 'red' });
+   
+   cart.push(object);
+   
+   return object;
+ 
 }
 
 function viewCart() {
